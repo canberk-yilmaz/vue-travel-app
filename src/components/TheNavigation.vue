@@ -40,33 +40,38 @@ export default {
 <style scoped>
 #nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-bottom: 50px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  z-index: 1;
+  overflow: hidden;
 }
-
 #nav a {
   color: #2c3e50;
   text-decoration: none;
   font-weight: bold;
 }
-
-#nav a.router-link-exact-active {
-  color: #4437b6;
+#nav a.vue-school-active-class {
+  color: #ab26ab;
 }
-
 .nav-links {
   display: flex;
 }
-
 .links {
   padding-right: 20px;
   list-style: none;
 }
-
 .links:hover {
   text-decoration: underline;
 }
 .logo {
   font-size: 20px;
-  color: #4437b6;
+  color: purple;
   font-weight: bold;
 }
 </style>

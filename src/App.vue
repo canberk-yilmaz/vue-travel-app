@@ -3,7 +3,7 @@
     <div id="nav">
       <TheNavigation />
     </div>
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <router-view :key="$route.path" />
     </transition>
   </div>
@@ -27,26 +27,9 @@ export default {
   font-family: "Roboto", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  color: #2c3e50;
   text-align: center;
-  font-size: 20px;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
   color: #2c3e50;
-  padding: 0 10px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 .slide-enter-active,
 .slide-leave-active {
   transition: opacity 1s, transform 1s;
@@ -88,5 +71,15 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+.input {
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
 }
 </style>

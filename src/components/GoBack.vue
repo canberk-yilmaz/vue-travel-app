@@ -18,6 +18,8 @@ export default {
 .go-back {
   display: flex;
   cursor: pointer;
+  margin-top: 75px;
+  position: fixed;
 }
 
 button {
