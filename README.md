@@ -1,4 +1,4 @@
-# vue-hotel-app
+# vue-travel-app
 
 ## Project setup
 ```
